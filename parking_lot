@@ -1,0 +1,6 @@
+#!/bin/bash
+echo $1
+## file_name = $1
+## echo $(file_name)
+gradle assemble
+java -jar build/libs/go-jek-parking-0.0.1-SNAPSHOT.jar $1
