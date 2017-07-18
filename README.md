@@ -1,29 +1,52 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
+This is a hackathon for go jek .
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* This application is parking lot application
+* Input (contents of file):
+create_parking_lot 6
+park KA-01-HH-1234 White
+park KA-01-HH-9999 White
+park KA-01-BB-0001 Black
+park KA-01-HH-7777 Red
+park KA-01-HH-2701 Blue
+park KA-01-HH-3141 Black
+leave 4
+status
+park KA-01-P-333 White
+park DL-12-AA-9999 White
+registration_numbers_for_cars_with_colour White
+slot_numbers_for_cars_with_colour White
+slot_number_for_registration_number KA-01-HH-3141
+slot_number_for_registration_number MH-04-AY-1111
+
+Output (to STDOUT):
+Created a parking lot with 6 slots
+Allocated slot number: 1
+Allocated slot number: 2
+Allocated slot number: 3
+Allocated slot number: 4
+Allocated slot number: 5
+Allocated slot number: 6
+Slot number 4 is free
+Slot No. Registration No Colour
+1 KA-01-HH-1234 White
+2 KA-01-HH-9999 White
+3 KA-01-BB-0001 Black
+5 KA-01-HH-2701 Blue
+6 KA-01-HH-3141 Black
+Allocated slot number: 4
+Sorry, parking lot is full
+KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333
+1, 2, 4
+6
+Not found
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* jdk 1.7
+* gradle 3.5
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact# parkingLot
